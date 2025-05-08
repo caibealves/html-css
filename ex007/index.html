@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        mark {
+            background-color: aquamarine;
+        }
+    </style> <!--o style muda a cor para todos as marcações na pagina-->
+    <title>Formatação de texto</title>
+</head>
+<body>
+    <h1>principais formatações</h1>
+    <h2>negrito/destaque</h2>
+    <p>usando <b>negrito</b> de forma nao semantica, apenas com a tag (b) de bold</p>
+    <p>usando <strong>negrito</strong> com a tag strong</p>
+    <h2>italico/enfase</h2>
+    <p>usando <i>italico</i> com a tag (i) de italic</p> 
+    <p>usando <em>italico</em> como enfase</p>
+    <h2>texto marcado</h2>
+    <p>podemos criar <mark>marcação</mark> com tag (mark) sem semantica e sempre será amarelo</p>
+    <p>podemos tambem criar <mark style="background-color: aqua;">marcação</mark> usando estilo </p>
+    <h2>texto deletado</h2>
+    <p>criando um texto <del>excluido</del> ou um texto <ins>inserido</ins> com semantica, mas tambem podemos usar a tag (u) no texto <u>inserido</u> </p>
+    <h2>sobreescrito e subescrito</h2>
+    <p> H<sub>2</sub>O ou 10<sup>3</sup> </p>
+    <h2>endereço</h2>
+    <p>tambem é possivel inserir um endereço, como <address>rua das palmeiras, 123</address></p>
+
+    <h1>outras formatações</h1>
+    <h2>codigo-fonte e pre-formatação</h2>
+    <p>o comando <code>document.getElementById('teste)</code>é escrito em linguagem javascript. A tag (code) deixa a frase mono espaçada, mais facil para leitura</p>
+    <p><pre>
+        <code>
+    num= int(input('Digite um numero'))
+    if num % == 0:
+        print(f'O numero {num} é par')
+    else:
+        print(f'O numero {num} é impar')
+        </code>
+    </pre>
+    a tag (pre) aceita a formatação que está no codigo do jeito que foi escrito, como as identações</p>
+    <h2>citações</h2>
+    <p>como diria tal pessoa: <q>tal coisa funciona de tal jeito</q> usando a tag (q) insere como </p>
+    <p>para citaçoes mais longas, é possivel usar a tag (blockquote)
+        <blockquote cite="url.do.site.com">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis dolores tempora nesciunt architecto saepe excepturi culpa reprehenderit fugiat, aperiam laudantium quidem ex ad dolorum. Atque hic repudiandae ipsum a!
+        </blockquote>
+    </p>
+    <h2>abreviações</h2>
+    <p>alguma abreviação como <abbr title="Central nervous system">CNS</abbr> podem ser marcadas para aparecerem como sigla e serem soletradas caso o cursor passe por cima</p>
+</body>
+</html>

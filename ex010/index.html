@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>voce pode acessar meu <a href="https://caibealves.github.io/" target="_blank" rel="external">repositório do meu github</a></p>
+    <p></p> <!--usando target permite que ao clicar no link, o usuario seja direcionado para o link em uma nova aba do navegador-->
+    <p>usando link externo de um site que voce não da o aval 100% de segurança, para o google nao utilizar a indexação é só mudar o atributo rel <a href="site.aleatorio.com" target="_blank" rel="nofollow"></a></p>
+
+    <h1>usando link interno</h1>
+    <p>link para a segundo <a href="pag02.html" target="_self" rel="next">pagina do site</a></p>
+    <p>link para a terceira <a href="pag03/pag03.html" rel="next">pagina do site</a></p>
+
+    <h1>links para downloads</h1>
+    <ul>
+        <li><a href="arquivos/1-s2.0-S000632231731661X-main.pdf" download="artigo.pdf" type="application/pdf">Baixar o artigo em PDF</a></li>
+        <li><a href="arquivos/1-s2.0-S000632231731661X-main.zip" download="artigo.zip" type="application/zip">Artigo compactado</a></li> <!--https://www.iana.org/assignments/media-types/media-types.xhtml  é o site para saber o tipo-->
+    </ul>
+</body>
+</html>

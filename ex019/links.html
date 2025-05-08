@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : pseudo-classe
+            :: pseudo-elemento 
+            > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial::before {
+            content: '->';
+        }
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/caibealves/Suicide_Rate" target="_blank">Repositorio github</a></li>
+        <li><a href="https://www.youtube.com/@IanNevesOficial" class="especial">Canal do youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/caibealves/">Site</a></li>
+    </ul>
+</body>
+</html>

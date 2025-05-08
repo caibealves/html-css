@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou s aumentando e diminuindo o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <audio src="midias/AboveClouds.mp3" controls></audio>
+    <p>Testando diferentes tipos de audio</p>
+    <audio preload="metadata" controls loop>
+        <source scr="midias/AboveClouds.mp3" type="audio/mp3">
+        <source scr="midias/AboveClouds.ogg" type="audio/ogg">
+        <source scr="midias/AboveClouds.wav" type="audio/wav">
+        <p>caso o audio nao funcione e voce queira fazer o download
+        <a href="midias/AboveClouds.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+    
+    <h1>reproduzindo videos localmente pode gerar muito trafego de banda, e acaba ficando bem caro de hospedar</h1>
+    <video width="560" poster="imagens/foto-p.png" controls>
+        <source src="midias/Fêmea.mp4" type="video/mp4">
+        <source src="midias/Fêmea.m4v" type="video/mp4">
+        <source src="midias/Fêmea.webm" type="video/webm">
+        <p>seu navegador pode nao ter compatibilidade com videos.</p>
+    </video>
+    <h1>inserindo videos do youtube</h1> <!--da para fazer com vimeo tambem, e assim por diante, e dessa forma nao há consumo de banda-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/D-ya6U-pbWo?si=dDjmIg5fQAmqJmA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
